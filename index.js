@@ -18,7 +18,6 @@ app.get("/", (req, resp) => {
     resp.send("<h1>This is memories server.</h1>");
 });
 // connecting to atlas
-// const CONNECTION_URL = "mongodb+srv://voldemort:7378765387@cluster0.yzmsh.mongodb.net/memories?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;  
 
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})
